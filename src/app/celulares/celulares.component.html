@@ -12,15 +12,17 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
 
 <h1>CELULARES DISPONIBLES</h1>
-<a id="bt" class="btn btn-outline-success btn-lg" (click)="aniadirfinal()">TERMINAR COMPRA</a>
+<div id="centro">
+<a id="bt12" class="btn btn-outline-success btn-lg text-center" (click)="aniadirfinal()">TERMINAR COMPRA</a>
+</div>
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="cont">
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5">{{marcas[0]}}</h2>
-      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, consequuntur maiores amet earum deserunt exercitationem repudiandae dolor facere, fugit, blanditiis fuga dolorum nulla! Amet saepe, perspiciatis sapiente alias pariatur harum.</p>
-      <p>PRECIO: Bs {{precios[0]}}</p>
-      <p>¡EN OFERTA!</p>
-      <p>Cantidad: {{cant1}}</p>
+      <h2 id="cont11" class="display-5">{{marcas[0]}}</h2>
+      <p class="lead" id="cont1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, consequuntur maiores amet earum deserunt exercitationem repudiandae dolor facere, fugit, blanditiis fuga dolorum nulla! Amet saepe, perspiciatis sapiente alias pariatur harum.</p>
+      <p id="cont1">PRECIO: Bs {{precios[0]}}</p>
+      <p id="cont1">¡EN OFERTA!</p>
+      <p id="cont1">Cantidad: {{cant1}}</p>
       <a id="bt" class="btn btn-outline-success btn-lg" (click)="aniadir1()" >AÑADIR COMPRA</a>
     </div>
     <div class="bg-success shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;" id="cont">
@@ -28,10 +30,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
   </div>
   <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5">{{marcas[1]}}</h2>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, doloremque! Eos vero error laboriosam mollitia, nobis officia quae laudantium dolorum explicabo. Nobis soluta ipsa omnis corporis libero quaerat odit optio.</p>
-      <p>PRECIO: Bs {{precios[1]}}</p>
-      <p>Cantidad: {{cant2}}</p>
+      <h2 class="display-5" id="cont21">{{marcas[1]}}</h2>
+      <p class="lead" id="cont2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, doloremque! Eos vero error laboriosam mollitia, nobis officia quae laudantium dolorum explicabo. Nobis soluta ipsa omnis corporis libero quaerat odit optio.</p>
+      <p id="cont2">PRECIO: Bs {{precios[1]}}</p>
+      <p id="cont2"> Cantidad: {{cant2}}</p>
       <a id="bt" class="btn btn-outline-light btn-lg" (click)="aniadir2()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -43,10 +45,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="cont">
   <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5">{{marcas[2]}}</h2>
-      <p class="lead" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima placeat aut, eveniet, voluptatem obcaecati eius aliquam magni, aliquid est quod eos hic provident harum. Nulla ducimus nisi rem eaque repudiandae!</p>
-      <p>PRECIO: Bs {{precios[2]}}</p>
-      <p>Cantidad: {{cant3}}</p>
+      <h2 class="display-5" id="cont21">{{marcas[2]}}</h2>
+      <p class="lead" id="cont2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima placeat aut, eveniet, voluptatem obcaecati eius aliquam magni, aliquid est quod eos hic provident harum. Nulla ducimus nisi rem eaque repudiandae!</p>
+      <p id="cont2">PRECIO: Bs {{precios[2]}}</p>
+      <p id="cont2">Cantidad: {{cant3}}</p>
       <a id="bt" class="btn btn-outline-light btn-lg" (click)="aniadir3()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -55,11 +57,11 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
   </div>
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
     <div class="my-3 p-3">
-      <h2 class="display-5" > {{marcas[3]}}</h2>
-      <p class="lead" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error magnam, omnis molestiae labore et consectetur, natus facere harum adipisci corrupti earum fuga excepturi at quasi id unde sint neque!</p>
-      <p>PRECIO: Bs {{precios[3]}}</p>
-      <p>¡EN OFERTA!</p>
-      <p>Cantidad: {{cant4}}</p>
+      <h2 class="display-5" id="cont11"> {{marcas[3]}}</h2>
+      <p class="lead"id="cont1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error magnam, omnis molestiae labore et consectetur, natus facere harum adipisci corrupti earum fuga excepturi at quasi id unde sint neque!</p>
+      <p id="cont1">PRECIO: Bs {{precios[3]}}</p>
+      <p id="cont1">¡EN OFERTA!</p>
+      <p id="cont1">Cantidad: {{cant4}}</p>
       <a id="bt" class="btn btn-outline-success btn-lg" (click)="aniadir4()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-success shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -70,10 +72,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="cont">
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5">{{marcas[4]}}</h2>
-      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, consequuntur maiores amet earum deserunt exercitationem repudiandae dolor facere, fugit, blanditiis fuga dolorum nulla! Amet saepe, perspiciatis sapiente alias pariatur harum.</p>
-      <p>PRECIO: Bs {{precios[4]}}</p>
-      <p>Cantidad: {{cant5}}</p>
+      <h2 class="display-5" id="cont11">{{marcas[4]}}</h2>
+      <p class="lead" id="cont1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, consequuntur maiores amet earum deserunt exercitationem repudiandae dolor facere, fugit, blanditiis fuga dolorum nulla! Amet saepe, perspiciatis sapiente alias pariatur harum.</p>
+      <p id="cont1">PRECIO: Bs {{precios[4]}}</p>
+      <p id="cont1">Cantidad: {{cant5}}</p>
       <a id="bt" class="btn btn-outline-success btn-lg" (click)="aniadir5()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-success shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -81,10 +83,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
   </div>
   <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5">{{marcas[5]}}</h2>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, doloremque! Eos vero error laboriosam mollitia, nobis officia quae laudantium dolorum explicabo. Nobis soluta ipsa omnis corporis libero quaerat odit optio.</p>
-      <p>PRECIO: Bs {{precios[5]}}</p>
-      <p>Cantidad: {{cant6}}</p>
+      <h2 class="display-5" id="cont21">{{marcas[5]}}</h2>
+      <p class="lead" id="cont2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, doloremque! Eos vero error laboriosam mollitia, nobis officia quae laudantium dolorum explicabo. Nobis soluta ipsa omnis corporis libero quaerat odit optio.</p>
+      <p id="cont2">PRECIO: Bs {{precios[5]}}</p>
+      <p id="cont2">Cantidad: {{cant6}}</p>
       <a id="bt" class="btn btn-outline-light btn-lg" (click)="aniadir6()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -96,10 +98,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="cont">
   <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5">{{marcas[6]}}</h2>
-      <p class="lead" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima placeat aut, eveniet, voluptatem obcaecati eius aliquam magni, aliquid est quod eos hic provident harum. Nulla ducimus nisi rem eaque repudiandae!</p>
-      <p>PRECIO: Bs {{precios[6]}}</p>
-      <p>Cantidad: {{cant7}}</p>
+      <h2 class="display-5" id="cont21">{{marcas[6]}}</h2>
+      <p class="lead" id="cont2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima placeat aut, eveniet, voluptatem obcaecati eius aliquam magni, aliquid est quod eos hic provident harum. Nulla ducimus nisi rem eaque repudiandae!</p>
+      <p id="cont2">PRECIO: Bs {{precios[6]}}</p>
+      <p id="cont2">Cantidad: {{cant7}}</p>
       <a id="bt" class="btn btn-outline-light btn-lg" (click)="aniadir7()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -108,11 +110,11 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
   </div>
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
     <div class="my-3 p-3">
-      <h2 class="display-5" >{{marcas[7]}} </h2>
-      <p class="lead" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error magnam, omnis molestiae labore et consectetur, natus facere harum adipisci corrupti earum fuga excepturi at quasi id unde sint neque!</p>
-      <p>PRECIO: Bs {{precios[7]}}</p>
-      <p>¡EN OFERTA!</p>
-      <p>Cantidad: {{cant8}}</p>
+      <h2 class="display-5" id="cont11">{{marcas[7]}} </h2>
+      <p class="lead" id="cont1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error magnam, omnis molestiae labore et consectetur, natus facere harum adipisci corrupti earum fuga excepturi at quasi id unde sint neque!</p>
+      <p id="cont1">PRECIO: Bs {{precios[7]}}</p>
+      <p id="cont1">¡EN OFERTA!</p>
+      <p id="cont1">Cantidad: {{cant8}}</p>
       <a id="bt" class="btn btn-outline-success btn-lg" (click)="aniadir8()">AÑADIR COMPRA</a>
     </div>
     <div class="bg-success shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">

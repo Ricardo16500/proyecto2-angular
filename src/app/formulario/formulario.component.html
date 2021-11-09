@@ -24,18 +24,26 @@
   <input type="text" class="form-control"  [(ngModel)]="direccion" name="apellido" id="email-person" >
 
 </div>
-
+<div id="centro">
 <a id="bt" class="btn btn-outline-success btn-lg" (click)="onSubmit()">ENVIAR</a>
+&nbsp;
+    &nbsp;
+    &nbsp;
 <button type="reset"  class="btn btn-success btn-lg">CANCELAR</button>
+</div>
   </form>
   <br>
   <br>
-  <div class="container" *ngIf="mostrar==1" >
+  <div class="container" *ngIf="mostrar==1" id="oculto" >
     <h1 >FACTURA</h1>
     <label>NOMBRE: {{name}}</label>
     &nbsp;
     &nbsp;
     &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
     <label>CI: {{ci}}</label>
     <br>
     <label>DETALLES COMPRA:</label>
@@ -58,7 +66,7 @@
       </tbody>
     </table>
     <h1>TOTAL Bs: {{total}}</h1>
-    <h2>DESCUENTO: {{des}} %</h2>
+    <h1>DESCUENTO: {{des}} %</h1>
     <h1>TOTAL A PAGAR Bs: {{preciototal}} </h1>
   </div>
 </div>

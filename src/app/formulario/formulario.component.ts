@@ -8,8 +8,8 @@ import { NgModule } from '@angular/core';
 })
 export class FormularioComponent {
   name: string='';
-  ci: any=0;
-  celular: any=0;
+  ci: any='';
+  celular: any='';
   data: InternalData[]=[];
   correo: string='';
   direccion: string='';
